@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <input id="search-query" placeholder="제목을 입력하세요.">
+        <button id="bookSearch-btn">검색</button>
+    </div>
+    <div>
+        <table border="1">
+            <thead id="tableHead">
+                <tr>
+                    <td>썸네일</td>
+                    <td>제목</td>
+                    <td>저자</td>
+                    <td>가격</td>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <button id="pre-btn">이전</button>
+        <button id="next-btn">다음</button>
+    </div>
+    <p id="total-result"></p>
+</body>
+<script src="./book-search.js"></script>
+
+</html>

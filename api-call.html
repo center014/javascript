@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>종류</h1>
+    <select name="wine-type" onchange="showValue(this)">
+        <option value="reds">레드와인</option>
+        <option value="whites">화이트와인</option>
+        <option value="sparkling">스파클링와인</option>
+        <option value="rose">로즈와인</option>
+        <option value="dessert">디저트와인</option>
+        <option value="port">포트와인</option>
+    </select>
+    <div>
+        <img id="wine-image" src="">
+        <div>
+            <p style="display: inline-block;">이름 : </p>
+            <p style="display: inline-block;" id="wine-title">바뀔겁니다.</p>
+        </div>
+        <div>
+            <p style="display: inline-block;">위치 : </p>
+            <p style="display: inline-block;" id="wine-location">바뀔겁니다.</p>
+        </div>
+        <div>
+            <p style="display: inline-block;">평점 : </p>
+            <p style="display: inline-block;" id="wine-rating">바뀔겁니다.</p>
+        </div>
+        <div>
+            <p style="display: inline-block;">리뷰 : </p>
+            <p style="display: inline-block;" id="wine-review">바뀔겁니다.</p>
+        </div>
+        <div>
+            <p style="display: inline-block;">양조장 : </p>
+            <p style="display: inline-block;" id="wine-winery">바뀔겁니다.</p>
+        </div>
+    </div>
+    <button id="pre-btn">이전</button>
+    <button id="next-btn">다음</button>
+</body>
+<script src="./api-call.js"></script>
+
+</html>
